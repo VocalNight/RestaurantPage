@@ -1,0 +1,98 @@
+#content {
+    color: #78350f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    
+}
+
+
+.Home {
+    background-color: #4b5563;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    height: 1000px;
+}
+
+div {
+    
+}
+
+.header {
+    width: 100%;
+}
+
+.name {
+
+    clip-path: polygon( 0 33.3%, 6% 0, 94% 0, 100% 33.3%, 100% 66.6%, 94% 100%, 6% 100%, 0 66.6%);
+
+}
+
+.openTime {
+    flex-direction: column;
+    clip-path: polygon(50% 0%, 100% 29%, 50% 100%, 0 32%);
+}
+
+.location {
+    clip-path: polygon(20% 0%, 70% 0%, 100% 90%, 0% 90%);
+}
+
+.wrap-opentime {
+    clip-path: polygon(50% 0%, 100% 29%, 50% 100%, 0 32%);
+}
+
+.description, .name, .location, .openTime {
+    align-items: center;
+    justify-content: center;
+    background-color: #eff6ff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+}
+
+.wrap-name {  
+    clip-path: polygon( 0 33.3%, 6% 0, 94% 0, 100% 33.3%, 100% 66.6%, 94% 100%, 6% 100%, 0 66.6%); 
+}
+
+.wrap-description, .wrap-name, .wrap-opentime, .wrap-location {
+    height: 15%;
+    width: 500px;
+    background-color: #60a5fa;
+    padding: 10px;
+}
+
+.wrap-description {
+    clip-path: ellipse(400px 120px at 110px 100px);
+}
+
+
+.wrap-location {
+    clip-path: polygon(20% 0%, 70% 0%, 100% 90%, 0% 90%);
+}
+
+.description {
+    clip-path: ellipse(400px 120px at 110px 100px);
+}
+
+.advert {
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 1em;
+    margin-inline-start: 25px;
+    margin-inline-end: 0px
+}
+
+.footer {
+    width: 100%;
+}
