@@ -1,8 +1,10 @@
+import home from './home'
 import menu from './menu'
 
-function loadDom() {
+function loadDomDefault() {
+    home();
     menu();
     console.log('hi')
 }
 
-loadDom();
+loadDomDefault();

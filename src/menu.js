@@ -1,87 +1,85 @@
 const menuWindow = () => {
 
-    console.log('hi2')
-
     const container = document.querySelector('.main');
 
-    // home
+    const menu = document.createElement('div');
+    menu.classList.add('Menu');
 
-    const home = document.createElement('div')
-    home.classList.add("Home");
+    //recipes
 
-    //Name
+    //Lasagna
 
-    const wrapName = document.createElement('div')
-    wrapName.classList.add("wrap-name");
+    const lasagna = document.createElement('div');
+    lasagna.classList.add('recipe');
 
-    const name = document.createElement('div')
-    name.classList.add("name");
+    const imgLasagna = document.createElement('img');
+    imgLasagna.setAttribute("src", "../lasagna.jpg");
 
-    const nameP = document.createElement('h1');
-    nameP.textContent = `Ipsum's Restaurant`;
+    const lasagnaP = document.createElement('p');
+    const lasagnah3 = document.createElement('h3');
+    lasagnah3.textContent = 'Ipsum Lasagna';
 
-    name.appendChild(nameP)
-    wrapName.appendChild(name);
 
-    //Description
+    lasagna.appendChild(imgLasagna);
+    lasagnaP.appendChild(lasagnah3);
+    lasagna.appendChild(lasagnaP);
 
-    const wrapDescription = document.createElement('div');
-    wrapDescription.classList.add('wrap-description');
+    //Margheritta
 
-    const description = document.createElement('div');
-    description.classList.add('description');
+    const margherita = document.createElement('div');
+    margherita.classList.add('recipe');
 
-    const descriptionP1 = document.createElement('p')
-    descriptionP1.classList.add('advert');
-    descriptionP1.textContent = 'The best restaurant in the world of lorem ipsum. ';
+    const imgMargherita = document.createElement('img');
+    imgMargherita.setAttribute("src", "../Margherita.png");
 
-    const descriptionP2 = document.createElement('p');
-    descriptionP2.classList.add('advert');
-    descriptionP2.textContent = 'New recipes generating everyday means our menu is always fresh and creative!';
+    const margheritaP = document.createElement('p');
+    const margheritah3 = document.createElement('h3');
+    margheritah3.textContent = 'Lorem Margheritta';
 
-    description.appendChild(descriptionP1);
-    description.appendChild(descriptionP2);
-    wrapDescription.appendChild(description);
+    margherita.appendChild(imgMargherita);
+    margherita.appendChild(margheritah3);
+    margherita.appendChild(margheritaP);
 
-    //Open Times
+    //Raviolli
 
-    const wrapOpentime = document.createElement('div');
-    wrapOpentime.classList.add('wrap-opentime');
+    const raviolli = document.createElement('div');
+    raviolli.classList.add('recipe');
 
-    const opentTime = document.createElement('div');
-    opentTime.classList.add('openTime');
+    const imgRaviolli = document.createElement('img');
+    imgRaviolli.setAttribute("src", "../raviolli.png");
 
-    const openHours = document.createElement('h3');
-    const openP = document.createElement('p');
+    const raviolliP = document.createElement('p');
+    const raviollih3 = document.createElement('h3');
+    raviollih3.textContent = 'Dolor Raviolli';
 
-    openHours.textContent = 'Open hours';
-    openP.textContent = 'all day, everyday!';
+    raviolli.appendChild(imgRaviolli);
+    raviolli.appendChild(raviollih3);
+    raviolli.appendChild(raviolliP);
 
-    opentTime.appendChild(openHours);
-    opentTime.appendChild(openP);
-    wrapOpentime.appendChild(opentTime);
 
-    //Location
+    //spaghetti
 
-    const wrapLocation = document.createElement('div');
-    wrapLocation.classList.add('wrap-location');
+    const spaghetti = document.createElement('div');
+    spaghetti.classList.add('recipe');
 
-    const location = document.createElement('div');
-    location.classList.add('location');
+    const imgSpaghetti = document.createElement('img');
+    imgSpaghetti.setAttribute("src", "../spaghetti.png");
 
-    const locationP = document.createElement('p');
-    locationP.textContent = 'In any generator closest to you!';
+    const spaghettiP = document.createElement('p');
+    const spaghettih3 = document.createElement('h3');
+    spaghettih3.textContent = 'Amet Spaghett';
 
-    location.appendChild(locationP);
-    wrapLocation.appendChild(location);
+    spaghetti.appendChild(imgSpaghetti);
+    spaghetti.appendChild(spaghettih3);
+    spaghetti.appendChild(spaghettiP);
 
-    home.appendChild(wrapName);
-    home.appendChild(wrapDescription);
-    home.appendChild(wrapOpentime);
-    home.appendChild(wrapLocation);
 
-    container.appendChild(home);
+    menu.appendChild(lasagna);
+    menu.appendChild(margherita);
+    menu.appendChild(raviolli);
+    menu.appendChild(spaghetti);
 
+    container.appendChild(menu);
 }
 
 export default menuWindow;
